@@ -5,13 +5,7 @@ function solve(args) {
         let currentKey = kvp[0];
         let currentValue = kvp[1];
         obj[currentKey] = currentValue;
-        //obj = {key : currentKey, value : currentValue};
-        //console.log(obj)
     }
     let execute = args[args.length - 1];
-    if(obj.hasOwnProperty(execute)){
-        console.log(obj[execute]);
-    } else{
-        console.log('None');
-    }
+    console.log(obj[execute] || "None");
 }
